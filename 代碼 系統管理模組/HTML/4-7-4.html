@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公佈資訊 - 編輯</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+  <!-- CodeMirror -->
+  <link rel="stylesheet" href="../plugins/codemirror/codemirror.css">
+  <link rel="stylesheet" href="../plugins/codemirror/theme/monokai.css">
+  <!-- SimpleMDE -->
+  <link rel="stylesheet" href="../plugins/simplemde/simplemde.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="hold-transition sidebar-mini" style="background-color:#F4F6F9;">
+<!-- Site wrapper --> 
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">13</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">13 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button" >
+          <i class="fas fa-user"></i> 尼克(Nick)
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button" style="padding-left:2px;">
+          <i class="fas fa-sign-out-alt"></i> 登出
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="min-height: 100%">
+    
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link" style="text-align: center;">
+      <span class="brand-text font-weight-light">新北捷教育訓練系統</span>
+    </a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+          with font-awesome or any other icon font library -->
+        <li class="nav-header">員工教育訓練管理系統</li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                年度班期訓練計畫
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                年度出國訓練計畫
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                年度訓練計畫
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-folder-open"></i>
+              <p>
+                課程管理
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-folder-open"></i>
+              <p>
+                訓練管理
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-folder-open"></i>
+              <p>
+                合格證管理
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                職涯地圖設定
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">員工訓練功能管理</li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <p>
+                .
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <p>
+                .
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <p>
+                .
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-header">系統後台</li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-hashtag"></i>
+              <p>
+                代碼管理
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>班期代碼</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>課程代碼</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>訓練代碼</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>影片代碼</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>教材代碼</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="nav-icon fas fa-chalkboard"></i>
+                  <p>公佈欄管理</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>類型設定</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>公布資訊</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-vote-yea"></i>
+              <p>
+                角色權限管理
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>角色設定</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>權限設定</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                帳號密碼管理
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="fas fa-cog nav-icon"></i>
+                  <p>系統參數管理</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style=" padding: 10px 0px 10px 5px;">
+      <div class="container-fluid">
+        <div style="display: flex;">
+          <div class="col-sm-6" style="display: flex; align-items: center;">
+            <h1 style="font-size: medium;">公佈資訊</h1>
+          </div>
+          <div class="col-sm-6" style="display: flex; align-items: center; justify-content: flex-end;">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">系統後台</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公佈欄管理</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;"> 公佈資訊</a></li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+      <section class="content">
+        <!-- Main content -->
+        <div >
+          <!-- form start -->
+          <form class="form-horizontal">
+            <div class="card-body" style="display: flex; flex-wrap: wrap; padding-bottom: 0;">
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">承辦人</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEmail3" value="林OO" style="border-radius: 30px; background-color: #EEEEEE;">
+                </div>
+              </div>
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputPassword3" class="col-sm-3 col-form-label">單位</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword3" value="輕軌營運處" style="border-radius: 30px; background-color: #EEEEEE;">
+                </div>
+              </div>
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label" style="white-space: nowrap;">申請日期</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEmail3" value="112/11/15" style="border-radius: 30px; background-color: #EEEEEE;">
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-body" style="display: flex; flex-wrap:wrap ;padding-bottom: 0;">
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label" style="white-space: nowrap;"><span style="color: red;">*</span>標題</label>
+                <div class="col-sm-9" style="display: flex; flex-direction: column; align-items: flex-end;">
+                  <input type="text" class="form-control" id="inputEmail3" value="林OO" style="border-radius: 30px;" required>
+                  <p style="margin: 0px; color: red;">不可空白</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-body" style="display: flex; flex-wrap:wrap ;padding-bottom: 0;">
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">分類</label>
+                <div class="col-sm-10custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">最新消息</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">訓練公告</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">課程公告</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">系統公告</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="display: flex; flex-wrap:wrap ;padding-bottom: 0;">
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">是否置頂</label>
+                <div class="col-sm-10custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">是</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">否</label>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="display: flex; flex-wrap:wrap ;padding-bottom: 0;">
+              <div class="form-group row" style="display: flex; flex-wrap: nowrap; width: 45%; margin-right: 10px;">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">是否公告</label>
+                <div class="col-sm-10custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">是</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                  <label for="customRadio2" class="custom-control-label">否</label>
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body --> 
+          </form>
+          <form>
+            <div class="card-body">
+              <div class="form-group row">
+
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">觀看權限</label>
+                <div class="col-sm-9 d-flex justify-content-end">
+                  <!-- 新增人員權限按鈕 -->
+                  <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#permissionModal">+新增人員權限</button>
+                </div>
+                <!-- 輸入文字的地方 -->
+                <div class="container">
+                  <div class="text-box" id="textBox" style="margin-top: 10px;"></div>
+                  <!-- 包含標籤的方框 -->
+                  <div class="tag-container" id="tagContainer" style="border: 1px solid #ced4da; padding: 10px; border-radius: 5px; margin-top: 10px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="permissionModal">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content ">
+                  <div class="modal-header">
+                    <h5 class="modal-title">選擇人員權限</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission1" value="人資部｜林先生">
+                      <label class="form-check-label" for="permission1">人資部｜林先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission2" value="人資部｜黃先生">
+                      <label class="form-check-label" for="permission2">人資部｜黃先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission3" value="人資部｜曾先生">
+                      <label class="form-check-label" for="permission3">人資部｜曾先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission4" value="人資部｜陳先生">
+                      <label class="form-check-label" for="permission4">人資部｜陳先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission5" value="人資部｜王先生">
+                      <label class="form-check-label" for="permission5">人資部｜王先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission6" value="人資部｜楊先生">
+                      <label class="form-check-label" for="permission6">人資部｜楊先生</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="permission7" value="人資部｜呂先生">
+                      <label class="form-check-label" for="permission7">人資部｜呂先生</label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="addSelectedPermissions()">確定</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="card-body">
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">公告內容</label>
+            </div>
+            <div>
+              <!-- /.card-header -->
+              <div class="card-body text-box" style="padding-right: 10px;">
+                <textarea id="summernote" >
+                  Place <em>some</em> <u>text</u> <strong>here</strong>
+                </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!-- ./row -->
+        <button type="button" class="btn btn-block btn-default" style="max-width: 25%; margin-right: 5px;">取消</button>
+            <button type="button" class="btn btn-block btn-primary" style="max-width: 25%;">確定</button>
+      </section>
+      <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer" style="display: none;">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- Summernote -->
+<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- CodeMirror -->
+<script src="../plugins/codemirror/codemirror.js"></script>
+<script src="../plugins/codemirror/mode/css/css.js"></script>
+<script src="../plugins/codemirror/mode/xml/xml.js"></script>
+<script src="../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
+
+    // CodeMirror
+    CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+      mode: "htmlmixed",
+      theme: "monokai"
+    });
+  })
+</script>
+<!-- 新增人員權限按鈕 -->
+<script>
+  function addPermission() {
+    // 在這裡新增處理新增人員權限的邏輯
+    console.log("新增人員權限");
+  }
+</script>
+
+<!-- 新增人員權限方框功能 -->
+<script>
+  let selectedPermissionsArray = [];
+
+  function addSelectedPermissions() {
+  const selectedPermissions = Array.from(document.querySelectorAll('.form-check-input:checked'))
+    .map(checkbox => checkbox.value);
+
+  // 如果沒有選擇權限，不執行後續操作
+  if (selectedPermissions.length === 0) {
+    // 關閉模態框
+    $('#permissionModal').modal('hide');
+    return;
+  }
+
+  // 將新選擇的權限與已選擇的權限合併，確保沒有重複的權限標籤
+  selectedPermissionsArray = [...new Set([...selectedPermissionsArray, ...selectedPermissions])];
+
+  // 將選中的權限作為標籤顯示在 text-box 中
+  const tagContainer = document.getElementById('tagContainer');
+  tagContainer.innerHTML = ''; // 清空之前的標籤
+
+  selectedPermissionsArray.forEach(permission => {
+    const tagElement = document.createElement('div');
+    tagElement.classList.add('tag');
+    tagElement.innerHTML = `<span class="tag-text">${permission}</span><span class="tag-remove" onclick="removeTag(this)">x</span>`;
+    tagContainer.appendChild(tagElement);
+
+    // 隱藏包含 "on" 的標籤
+    if (permission.includes("on")) {
+      tagElement.style.display = 'none';
+    }
+  });
+
+  // 關閉模態框
+  $('#permissionModal').modal('hide');
+}
+
+  function removeTag(tagRemoveElement) {
+    const tagElement = tagRemoveElement.parentElement;
+    const tagText = tagElement.querySelector('.tag-text').textContent;
+
+    //從已選擇的權限移除已刪除的權限
+    selectedPermissionsArray = selectedPermissionsArray.filter(permission => permission !== tagText);
+
+    tagElement.remove();
+  }
+</script>
+
+</body>
+</html>
