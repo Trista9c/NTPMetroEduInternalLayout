@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>公佈欄管理/分類設定 - 查詢無結果 </title>
+  <title>權限管理 - 查詢</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../style/style.css">
 </head>
 <body class="hold-transition sidebar-mini" style="background-color:#F4F6F9;">
-<!-- Site wrapper -->
+<!-- Site wrapper --> 
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -62,7 +62,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" >
     
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link" style="text-align: center;">
@@ -334,78 +334,44 @@
       <div class="container-fluid">
         <div class="d-flex">
           <div class="col-sm-6 d-flex align-content-center">
-            <h1 style="font-size: medium;">分類設定</h1>
+            <h1 style="font-size: medium;">權限管理</h1>
           </div>
           <div class="col-sm-6 d-flex justify-content-end align-content-center">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">系統後台</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公佈欄管理</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">分類設定</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">角色權限管理</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">權限管理</a></li>
             </ol>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
-    
-    <!-- SidebarSearch Form -->
-    <div class="ml-auto" style="width: 30vw;text-align: right;margin-right: 10px;">
-      <div class="input-group" data-widget="sidebar-search">
-        <input class="form-control form-control-sidebar" type="search" placeholder="關鍵字搜尋" aria-label="Search" style="border-radius: 30px; padding-right: 30px; position: relative;">
-        <div class="input-group-append" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
-          <span class="input-group-text" style="background-color: transparent; border: none;">
-            <button class="btn btn-sidebar" style="padding: 1px;"><i class="fas fa-search" style="color: #6c757d;"></i></button>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px;" >
+    <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px" >
       <button class="btn btn-outline-success">+ 新增</button>
-    </div>
-    <!-- Main content -->
-    <section class="content">
-    <!-- Default box -->
-    <div class="card">
-      <div class="card-body p-0" >
-        <table class="table table-striped projects " >
-          <thead style="background-color:#EEEEEE;">
-            <tr>
-              <th style="width: 30%">
-                名稱
-              </th>
-              <th style="width: 30%">
-                建立人員
-              </th>
-              <th style="width: 30%">
-                建立時間
-              </th>
-              <th style="width: 10%">
-              </th>
-          </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="5" style="background-color:#FFFFFF;height: 58vh;">
-                <div style="text-align: center; padding: 70px;" >
-                  <a href="#" >
-                    <i class="fas fa-search" style="color: #9e9e9e;font-size: 2rem;"></i>
-                  </a>
-                  <br>
-                  <p style="color: #6c757d;margin: 10px;" >[keyword]查詢無結果</p>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- /.card-body -->
-    </div>
-    <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="form-group ">
+                <select class="form-control form-control-b select2" style="width: 100%">
+                  <option selected="selected"></option>
+                  <option>訓練主管單位</option>
+                  <option>單位訓練承辦人</option>
+                  <option>講師</option>
+                  <option>學員</option>
+                  <option>承包商/委外人員</option>
+                </select>
+              </div>
+              <button class="btn btn-primary btn-search" style="position: absolute;bottom: -35px;right: 10px;">查詢</button>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+  
   <footer class="main-footer" style="display: none;">
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0

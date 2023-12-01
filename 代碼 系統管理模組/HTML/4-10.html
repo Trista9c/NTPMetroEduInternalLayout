@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>公佈資訊 - 編輯</title>
+  <title>同仁證照管理 - 編輯</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
@@ -342,13 +348,12 @@
       <div class="container-fluid">
         <div class="d-flex">
           <div class="col-sm-6 d-flex align-content-center">
-            <h1 style="font-size: medium;">公佈資訊</h1>
+            <h1 style="font-size: medium;">同仁證照管理</h1>
           </div>
           <div class="col-sm-6 d-flex justify-content-end align-content-center">
             <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">系統後台</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公佈欄管理</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公佈資訊</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">員工訓練功能管理</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">同仁證照管理</a></li>
             </ol>
           </div>
         </div>
@@ -360,59 +365,151 @@
       <div>
         <div class="card-body d-flex i-p-b">
           <div class="row d-flex" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label">承辦人</label>
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>部門名稱</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b-d" id="inputEmail3" value="林OO" >
+              <input type="text" class="form-control form-control-b-d" id="inputEmail3" value="人事課" >
             </div>
           </div>
           <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
-            <label for="inputPassword3" class="col-sm-3 col-form-label">單位</label>
+            <label for="inputPassword3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>職務稱謂</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b-d" id="inputPassword3" value="輕軌營運處" >
-            </div>
-          </div>
-        </div>
-        <div class="card-body d-flex i-p-b">
-          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label">申請日期</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b-d" id="inputEmail3" value="112/11/15" >
+              <input type="text" class="form-control form-control-b-d" id="inputPassword3" value="專員" >
             </div>
           </div>
         </div>
         <div class="card-body d-flex i-m-b">
-          <div class="row  d-flex flex-nowrap" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>標題</label>
+          <div class="row d-flex" style="width: 45%; margin-right: 60px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label" ><span style="color: red;">*</span>姓名</label>
             <div class="col-sm-9 d-flex flex-column align-items-end">
-              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO"  required>
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" required>
               <p class="p-r-s">不可空白</p>
+            </div>
+          </div>
+          <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
+            <label for="inputPassword3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>員工編號</label>
+            <div class="col-sm-9 d-flex flex-column align-items-end">
+              <input type="text" class="form-control form-control-b-d" id="inputPassword3" value="林OO" >
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-m-b">
+            <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
+              <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>證照名稱</label>
+              <div class="col-sm-9 d-flex flex-column align-items-end">
+                <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO"  required>
+                <p class="p-r-s">不可空白</p>
+              </div>
+            </div>
+          <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
+              <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證字號</label>
+              <div class="col-sm-9 d-flex flex-column align-items-end">
+                <input type="text" class="form-control form-control-b" id="inputEmail3" value="新北捷訓授證字 第1090000244號"  required>
+                <p class="p-r-s">不可空白</p>
+              </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-p-b">
+          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" >
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-m-b">
+          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證日期</label>
+            <div class="col-sm-9 d-flex flex-column align-items-end">
+              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                <input type="text" class="form-control form-control-b" data-target="#reservationdate" value="109/06/05" />
+                <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
+                </div>
+              </div>
+              <p class="p-r-s">請選擇日期</p>
+            </div>
+          </div>
+          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>到期日期</label>
+            <div class="col-sm-9 d-flex flex-column align-items-end">
+              <div class="input-group date" id="reservationdate2" data-target-input="nearest">
+                <input type="text" class="form-control form-control-b" data-target="#reservationdate2" value="109/06/05" />
+                <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
+                </div>
+              </div>
+              <p class="p-r-s">請選擇日期</p>
             </div>
           </div>
         </div>
         <div class="card-body i-p-b">
           <div class=" row  d-flex flex-nowrap align-items-baseline" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">分類</label>
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">執行業務需求</label>
             <div class="col-sm-3 custom-control custom-radio">
               <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
-              <label for="customRadio2" class="custom-control-label">最新消息</label>
+              <label for="customRadio2" class="custom-control-label">是</label>
             </div>
             <div class="col-sm-3 custom-control custom-radio">
               <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio" checked>
-              <label for="customRadio3" class="custom-control-label">訓練公告</label>
-            </div>
-            <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio4" name="customRadio" checked>
-              <label for="customRadio4" class="custom-control-label">課程公告</label>
-            </div>
-            <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio5" name="customRadio" checked>
-              <label for="customRadio5" class="custom-control-label">系統公告</label>
+              <label for="customRadio3" class="custom-control-label">否</label>
             </div>
           </div>
         </div>
+
+
+
+        <div class="card-body d-flex i-p-b">
+          <div class=" row d-flex" style="width: 45%; margin-right: 60px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-9">
+                  <div id="filename1" class="form-control form-control-b"style="width: 100%;"></div>
+                </div>
+                <div class="col-3" style="padding: 0;">
+                  
+                  <button class="btn btn-outline-success choose-image-btn" data-preview="image-preview1" data-filename="filename1" style="width: 100%;padding:6px 3px 6px 3px ;">+ 選擇檔案</button>
+                </div>
+              </div>
+            </div>
+            <div id="image-preview1" class="image-preview-container">
+              <button class="btn btn-outline-dark remove-image-btn" data-preview="image-preview1" data-filename="filename1" style="position: absolute; top: 5px; right: 5px; display: none;" onclick="removeImage(this)">✕</button>
+              <div class="image-preview-text">證照正面圖片<br>圖片僅用於證照審查</div>
+              <img class="image-preview">
+            </div>
+          </div>
+
+          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-9">
+                  <div id="filename2" class="form-control form-control-b"style="width: 100%;"></div>
+                </div>
+                <div class="col-3" style="padding: 0;">
+                  <button class="btn btn-outline-success choose-image-btn" data-preview="image-preview2" data-filename="filename2" style="width: 100%;padding:6px 3px 6px 3px ;">+ 選擇檔案</button>
+                </div>
+              </div>
+            </div>
+            <div id="image-preview2" class="image-preview-container">
+              <button class="btn btn-outline-dark remove-image-btn" data-preview="image-preview2" data-filename="filename2" style="position: absolute; top: 5px; right: 5px; display: none;" onclick="removeImage(this)">✕</button>
+              <div class="image-preview-text">證照反面圖片<br>圖片僅用於證照審查</div>
+              <img class="image-preview" >
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <hr>
         <div class="card-body i-p-b">
           <div class=" row d-flex flex-nowrap align-items-baseline" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">是否置頂</label>
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">回訓需求</label>
             <div class="col-sm-3 custom-control custom-radio">
               <input class="custom-control-input" type="radio" id="customRadio6" name="customRadio" checked>
               <label for="customRadio6" class="custom-control-label">是</label>
@@ -423,61 +520,41 @@
             </div>
           </div>
         </div>
-        <div class="card-body i-p-b">
-          <div class="row d-flex flex-nowrap align-items-baseline" style=" width: 45%; margin-right: 10px">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">是否公告</label>
-            <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio8" name="customRadio" checked>
-              <label for="customRadio8" class="custom-control-label">是</label>
-            </div>
-            <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio9" name="customRadio" checked>
-              <label for="customRadio9" class="custom-control-label">否</label>
-            </div>
-          </div>
-        </div>
         <!-- /.card-body --> 
-        <!-- col-sm-9 d-flex justify-content-end -->
-        <div class="card-body">
-          <div class="form-group row">
-            <label for="permissionDropdown" class="col-sm-3 col-form-label">觀看權限</label>
-            <div class="col-sm-9 d-flex justify-content-end">
-              <!-- 新增人員權限按鈕 -->
-              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#permissionModal">+新增人員權限</button>
-            </div>
-            <div class="container box-label">
-              <!-- 包含標籤的方框 -->
-              <div class="tag-container box-label-inside" id="tagContainer" ></div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal" tabindex="-1" role="dialog" id="permissionModal">
-          <div class="modal-dialog " role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">選擇人員權限</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+        <div class="card-body d-flex i-m-b">
+          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證日期</label>
+            <div class="col-sm-9 d-flex flex-column align-items-end">
+              <div class="input-group date" id="reservationdate3" data-target-input="nearest">
+                <input type="text" class="form-control form-control-b" data-target="#reservationdate3" value="109/06/05" />
+                <div class="input-group-append" data-target="#reservationdate3" data-toggle="datetimepicker">
+                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
+                </div>
               </div>
-              <div class="modal-body" id="permissionModalBody">
-                <!-- 部门和成员选择将在这里动态生成 -->
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="addSelectedPermissions()">確定</button>
-              </div>
+              <p class="p-r-s">請選擇日期</p>
             </div>
           </div>
         </div>
-        <div class="card-body">
-          <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-3 col-form-label">公告內容</label>
+        <div class="card-body d-flex i-m-b">
+          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="white-space: nowrap;"><span style="color: red;">*</span>回訓通知日期</label>
+            <div class="col-sm-9 d-flex flex-column align-items-end">
+              <div class="input-group date" id="reservationdate4" data-target-input="nearest">
+                <input type="text" class="form-control form-control-b" data-target="#reservationdate4" value="109/06/05" />
+                <div class="input-group-append" data-target="#reservationdate4" data-toggle="datetimepicker">
+                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
+                </div>
+              </div>
+              <p class="p-r-s">請選擇日期</p>
+            </div>
           </div>
-          <div class="" style="padding-right: 10px; ">
-              <textarea id="summernote" >
-                  Place <em>some</em> <u>text</u> <strong>here</strong>
-              </textarea>
+        </div>
+        <div class="card-body d-flex i-p-b">
+          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>證照級別</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" >
+            </div>
           </div>
         </div>
       </div>
@@ -523,6 +600,18 @@
 <script src="../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+<!-- date-range-picker -->
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+
+
+<!-- Select2 -->
+<script src="../plugins/select2/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
 <!-- Page specific script -->
 <script>
   $(function () {
@@ -537,116 +626,162 @@
   })
 </script>
 
-
-<!-- 新增人員權限功能 -->
+<!-- 日期 -->
 <script>
-  let selectedPermissionsArray = [];
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
 
-  // 模拟部门和成员数据
-  const departments = [
-    {
-      name: "人資部",
-      members: ["林先生", "張先生"]
-    },
-    {
-      name: "資訊部",
-      members: ["曾先生"]
-    },
-    {
-      name: "業務部",
-      members: ["陳先生", "呂先生"]
-    },
-    {
-      name: "行銷部",
-      members: ["陳小姐", "呂小姐","柳先生"]
-    }
-  ];
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
 
-  function populateModalContent() {
-    const modalBody = document.getElementById('permissionModalBody');
-    modalBody.innerHTML = '';
+    //Datemask dd/mm/yyyy
+    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+    //Datemask2 mm/dd/yyyy
+    $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+    //Money Euro
+    $('[data-mask]').inputmask()
 
-    departments.forEach(department => {
-      const departmentHeader = document.createElement('h6');
-      departmentHeader.textContent = department.name;
-      modalBody.appendChild(departmentHeader);
-
-      department.members.forEach((member, index) => {
-        const checkboxId = `permission${index + 1}`;
-        const checkboxValue = `${department.name}｜${member}`;
-        const checkboxLabel = `${department.name}｜${member}`;
-
-        const checkboxElement = document.createElement('div');
-        checkboxElement.classList.add('form-check');
-        checkboxElement.innerHTML = `
-          <input type="checkbox" class="form-check-input" id="${checkboxId}" value="${checkboxValue}">
-          <label class="form-check-label" for="${checkboxId}">${checkboxLabel}</label>
-        `;
-
-        modalBody.appendChild(checkboxElement);
-
-        if (selectedPermissionsArray.includes(checkboxValue)) {
-          const correspondingCheckbox = checkboxElement.querySelector('.form-check-input');
-          if (correspondingCheckbox) {
-            correspondingCheckbox.checked = true;
-          }
-        }
-      });
+    //Date picker
+    $('#reservationdate').datetimepicker({
+        format: 'L'
     });
-  }
-
-  $('#permissionModal').on('show.bs.modal', function (event) {
-    populateModalContent();
-  });
-
-  function addSelectedPermissions() {
-    const selectedPermissions = Array.from(document.querySelectorAll('.form-check-input:checked'))
-      .map(checkbox => checkbox.value);
-
-    if (selectedPermissions.length === 0) {
-      $('#permissionModal').modal('hide');
-      return;
-    }
-
-    selectedPermissionsArray = [...new Set([...selectedPermissionsArray, ...selectedPermissions])];
-
-    const tagContainer = document.getElementById('tagContainer');
-    tagContainer.innerHTML = '';
-
-    selectedPermissionsArray.forEach(permission => {
-      const tagElement = document.createElement('div');
-      tagElement.classList.add('tag');
-      tagElement.innerHTML = `<span class="tag-text">${permission}</span><span class="tag-remove" onclick="removeTag(this)">x</span>`;
-      tagContainer.appendChild(tagElement);
-
-      if (permission.includes("on")) {
-        tagElement.style.display = 'none';
-      }
+    $('#reservationdate2').datetimepicker({
+        format: 'L'
+    });
+    $('#reservationdate3').datetimepicker({
+        format: 'L'
+    });
+    $('#reservationdate4').datetimepicker({
+        format: 'L'
     });
 
-    $('#permissionModal').modal('hide');
-  }
+    // BS-Stepper Init
+    document.addEventListener('DOMContentLoaded', function () {
+      window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+    })
 
-  function removeTag(tagRemoveElement) {
-    const tagElement = tagRemoveElement.parentElement;
-    const tagText = tagElement.querySelector('.tag-text').textContent;
+    // DropzoneJS Demo Code Start
+    Dropzone.autoDiscover = false
 
-    const correspondingCheckbox = document.querySelector(`.form-check-input[value="${tagText}"]`);
-    if (correspondingCheckbox) {
-      correspondingCheckbox.checked = false;
+    // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+    var previewNode = document.querySelector("#template")
+    previewNode.id = ""
+    var previewTemplate = previewNode.parentNode.innerHTML
+    previewNode.parentNode.removeChild(previewNode)
+
+    var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+      url: "/target-url", // Set the url
+      thumbnailWidth: 80,
+      thumbnailHeight: 80,
+      parallelUploads: 20,
+      previewTemplate: previewTemplate,
+      autoQueue: false, // Make sure the files aren't queued until manually added
+      previewsContainer: "#previews", // Define the container to display the previews
+      clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+    })
+
+    myDropzone.on("addedfile", function(file) {
+      // Hookup the start button
+      file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
+    })
+
+    // Update the total progress bar
+    myDropzone.on("totaluploadprogress", function(progress) {
+      document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
+    })
+
+    myDropzone.on("sending", function(file) {
+      // Show the total progress bar when upload starts
+      document.querySelector("#total-progress").style.opacity = "1"
+      // And disable the start button
+      file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+    })
+
+    // Hide the total progress bar when nothing's uploading anymore
+    myDropzone.on("queuecomplete", function(progress) {
+      document.querySelector("#total-progress").style.opacity = "0"
+    })
+
+    // Setup the buttons for all transfers
+    // The "add files" button doesn't need to be setup because the config
+    // `clickable` has already been specified.
+    document.querySelector("#actions .start").onclick = function() {
+      myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
     }
-
-    selectedPermissionsArray = selectedPermissionsArray.filter(permission => permission !== tagText);
-
-    tagElement.remove();
-  }
-
-  $('#permissionModal').on('hidden.bs.modal', function (event) {
-    // 在模態框完全隱藏後，清空模態框內容
-    const modalBody = document.getElementById('permissionModalBody');
-    modalBody.innerHTML = '';
+    document.querySelector("#actions .cancel").onclick = function() {
+      myDropzone.removeAllFiles(true)
+    }
+    // DropzoneJS Demo Code End
   });
 </script>
 
+<!-- 圖片上傳設定 -->
+<script>
+  document.querySelectorAll('.choose-image-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      // 動態觸發檔案選擇
+      const fileInput = document.createElement('input');
+      fileInput.type = 'file';
+      fileInput.accept = 'image/*';
+      fileInput.style.display = 'none';
+
+      fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+
+        if (file) {
+          // 獲取檔案名稱
+          const fileName = file.name;
+          // 將檔案名稱顯示在對應的元素中
+          const fileNameElementId = button.getAttribute('data-filename');
+          const fileNameElement = document.getElementById(fileNameElementId);
+          fileNameElement.innerText = fileName;
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            // 使用 data-preview 屬性來查找相應的圖片預覽區域
+            const previewId = button.getAttribute('data-preview');
+            const preview = document.getElementById(previewId);
+
+            // 將圖片預覽顯示在方框中
+            const previewImage = preview.querySelector('.image-preview');
+            previewImage.src = e.target.result;
+            
+          };
+          reader.readAsDataURL(file);
+        }
+      // 顯示相應的移除按鈕
+      const previewId = button.getAttribute('data-preview');
+      const removeButton = document.querySelector(`.remove-image-btn[data-preview="${previewId}"]`);
+      removeButton.style.display = 'inline-block';
+      });
+
+      // 觸發檔案選擇
+      fileInput.click();
+    });
+  });
+
+  function removeImage(button) {
+    const previewId = button.getAttribute('data-preview');
+    const preview = document.getElementById(previewId);
+
+    // 移除圖片元素
+    const previewImage = preview.querySelector('.image-preview');
+    previewImage.src = '';  // 將圖片元素的 src 設置為空
+
+    // 移除檔案名稱顯示
+    const fileNameElementId = button.getAttribute('data-filename');
+    const fileNameElement = document.getElementById(fileNameElementId);
+    fileNameElement.innerText = '';
+
+    // 清空檔案選擇器的值
+    const fileInput = document.querySelector('.file-input');
+    fileInput.value = '';
+
+    // 隱藏移除按鈕
+    button.style.display = 'none';
+  }
+</script>
 </body>
 </html>
