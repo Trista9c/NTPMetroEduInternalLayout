@@ -13,6 +13,9 @@
 
 h1{
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 沒紅字時調整input */
@@ -32,6 +35,10 @@ h1{
   margin: 0px;
   color: red;
 }
+
+/* Modal調整 */
+
+
 
 /* 表格設定 */
 .table-height {
@@ -55,11 +62,11 @@ h1{
 } */
 .box-label-inside {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: top; 
   border: 1px solid #ced4da; 
   padding: 10px; 
   border-radius: 5px; 
-  margin-top: 10px;
+  margin-top: 10px; 
   height: 150px;
 }
 
@@ -73,7 +80,7 @@ h1{
 /* 4-7-4 橢圓input*/
 .form-control-b{
   border-radius: 30px;
-}
+} 
 
 /* 4-7-4 橢圓深色input*/
 .form-control-b-d{
@@ -197,7 +204,7 @@ select {
   position: absolute; /* 相對於父容器絕對定位 */
   left: 50%; /* 水平置中 */
   transform: translateX(-50%); /* 水平置中 */
-  padding: 5px; /* 適度的內邊距 */
+  padding: 5px; 
   pointer-events: none; /* 不接受滑鼠事件 */
   font-size: 16px;
   color: #888;
@@ -206,5 +213,47 @@ select {
 .image-preview {
   max-width: 100%;
   max-height: 100%;
-  margin: auto;
+  object-fit: cover;
+}
+
+/* 圖片移除按鈕設定 */
+.remove-image-btn{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+/* 關閉放大按鈕 */
+.close-button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+/* 4-10 圖片放大檢視區域 */
+.image-preview-enlarged{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 9999;
+}
+.enlarged-image{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-width: 90%;
+  max-height: 90%
 }

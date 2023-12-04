@@ -361,6 +361,8 @@
     <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px;" >
       <button class="btn btn-outline-success">+ 新增</button>
     </div>
+
+
     <!-- Main content -->
     <section class="content">
     <!-- Default box -->
@@ -431,5 +433,15 @@
 <script src="../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+<!-- Modal設定 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var addModal = new bootstrap.Modal(document.getElementById('addModal'));
+
+    document.querySelector('.btn-outline-success').addEventListener('click', function () {
+      addModal.show();
+    });
+  });
+</script>
 </body>
 </html>

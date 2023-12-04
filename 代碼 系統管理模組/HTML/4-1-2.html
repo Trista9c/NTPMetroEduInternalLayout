@@ -383,6 +383,36 @@
     <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px;" >
       <button class="btn btn-outline-success">+ 新增</button>
     </div>
+    <!-- Modal -->
+    <div class="modal" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
+          <!-- /.login-logo -->
+          <div class="login-box card login-card-body" style="border-radius: 15px;">
+            <b class="login-box-msg" style="text-align: left; padding-left: 0; padding-bottom: 13px;">班期代碼-新增 </b>
+            <form action="../../index3.html" method="post">
+              <p style="margin-bottom: 5px;"> <span style="color: red;">*</span>標題</p>
+              <div class="input-group">
+                <input type="text" class="form-control" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
+              </div>
+              <p class="p-r-s" style="text-align: right;">不可空白</p>
+              <p style="margin-bottom: 5px;"> <span style="color: red;">*</span>代碼</p>
+              <div class="input-group">
+                <span class="input-group-text" style="border: none;padding:0px 7px 0px 3px;">A-</span>
+                <input type="text" class="form-control" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
+              </div>
+              <p class="p-r-s" style="text-align: right;">不可空白</p>
+              <p>代碼說明 <span style="font-size: small;color: #6c757d;">(0/500)</span></p>
+              <textarea name="message" class="form-control" rows="4"></textarea>
+              <div class="d-flex" style="justify-content: flex-end; align-items: flex-end;">
+                <button type="button" class="btn btn-block btn-default" style="max-width: 25%; margin-right: 5px;">取消</button>
+                <button type="button" class="btn btn-block btn-primary" style="max-width: 25%;">確定</button>
+              </div>
+            </form>
+            <!-- /.login-card-body -->
+          </div>
+      </div>
+    </div>
+
     <!-- Main content -->
     <section class="content">
     <!-- Default box -->
@@ -733,6 +763,16 @@
         cell.classList.add("custom-tooltip");
         cell.setAttribute("data-tooltip", originalText);
       }
+    });
+  });
+</script>
+<!-- Modal設定 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var addModal = new bootstrap.Modal(document.getElementById('addModal'));
+
+    document.querySelector('.btn-outline-success').addEventListener('click', function () {
+      addModal.show();
     });
   });
 </script>
