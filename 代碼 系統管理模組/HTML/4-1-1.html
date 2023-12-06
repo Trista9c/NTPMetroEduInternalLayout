@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="hold-transition sidebar-mini" style="background-color:#F4F6F9;">
+<body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -330,7 +330,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header" style=" padding: 10px 0px 10px 5px;">
+    <section class="content-header">
       <div class="container-fluid">
         <div class="d-flex">
           <div class="col-sm-6 d-flex align-content-center">
@@ -348,9 +348,9 @@
     </section>
     
     <!-- SidebarSearch Form -->
-    <div class="ml-auto" style="width: 30vw;text-align: right;margin-right: 10px;">
+    <div class="ml-auto ml-auto-search">
       <div class="input-group" data-widget="sidebar-search">
-        <input class="form-control form-control-sidebar" type="search" placeholder="關鍵字搜尋" aria-label="Search" style="border-radius: 30px; padding-right: 30px; position: relative;">
+        <input class="form-control form-control-sidebar " type="search" placeholder="關鍵字搜尋" aria-label="Search" style="border-radius: 30px; padding-right: 30px; position: relative;">
         <div class="input-group-append" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">
           <span class="input-group-text" style="background-color: transparent; border: none;">
             <button class="btn btn-sidebar" style="padding: 1px;"><i class="fas fa-search" style="color: #6c757d;"></i></button>
@@ -358,7 +358,7 @@
         </div>
       </div>
     </div>
-    <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px" >
+    <div class="ml-auto ml-auto-bt" style="width: 30vw;text-align: right;margin:10px" >
       <button class="btn btn-outline-success">+ 新增</button>
     </div>
     <!-- Modal -->
@@ -366,17 +366,17 @@
       <div class="modal-dialog modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center">
           <!-- /.login-logo -->
           <div class="login-box card login-card-body" style="border-radius: 15px;">
-            <b class="login-box-msg" style="text-align: left; padding-left: 0; padding-bottom: 13px;">班期代碼-新增 </b>
+            <b class="login-box-msg modal-title">班期代碼-新增 </b>
             <form action="../../index3.html" method="post">
               <p style="margin-bottom: 5px;"> <span style="color: red;">*</span>標題</p>
               <div class="input-group">
-                <input type="text" class="form-control" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
+                <input type="text" class="form-control modal-input" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
               </div>
               <p class="p-r-s" style="text-align: right;">不可空白</p>
               <p style="margin-bottom: 5px;"> <span style="color: red;">*</span>代碼</p>
               <div class="input-group">
                 <span class="input-group-text" style="border: none;padding:0px 7px 0px 3px;">A-</span>
-                <input type="text" class="form-control" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
+                <input type="text" class="form-control modal-input" required style="border-radius: 5px; border: 1px solid #CED4DA; outline: none;" onfocus="this.style.borderColor='#80BDFF'" onblur="this.style.borderColor='#CED4DA'">
               </div>
               <p class="p-r-s" style="text-align: right;">不可空白</p>
               <p>代碼說明 <span style="font-size: small;color: #6c757d;">(0/500)</span></p>
@@ -391,7 +391,6 @@
       </div>
     </div>
 
-
     <!-- Main content -->
     <section class="content">
       <div style="text-align: center; padding: 70px;" >
@@ -399,7 +398,7 @@
           <i class="fas fa-plus-circle" style="color: #6c757d;font-size:2rem"></i>
         </a>
         <br>
-        <p style="color: #6c757d;margin: 10px;" >尚未建立[班期代碼]，趕快前去建立！</p>
+        <p class="p-content">尚未建立[班期代碼]，趕快前去建立！</p>
       </div>
     </section>
     <!-- /.content -->

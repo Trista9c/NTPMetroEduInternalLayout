@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>同仁證照管理 - 編輯</title>
-
+  <title>承包商/委外人員帳號編輯</title>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- daterange picker -->
@@ -348,12 +347,12 @@
       <div class="container-fluid">
         <div class="d-flex">
           <div class="col-sm-6 d-flex align-content-center">
-            <h1 style="font-size: medium;">同仁證照管理</h1>
+            <h1 style="font-size: medium;">超級強公司</h1>
           </div>
           <div class="col-sm-6 d-flex justify-content-end align-content-center">
             <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">員工訓練功能管理</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">同仁證照管理</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">系統後台</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公佈欄管理</a></li>
             </ol>
           </div>
         </div>
@@ -363,63 +362,77 @@
     <section class="content">
       <!-- Main content -->
       <div>
-        <div class="card-body d-flex i-p-b">
-          <div class="row d-flex" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>部門名稱</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b-d" id="inputEmail3" value="人事課" >
+        <div class="card-body i-p-b">
+          <div class=" row  d-flex flex-nowrap align-items-baseline" style="width: 65%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 11.66px;">廠商類型</label>
+            <div class="col-sm-3 custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+              <label for="customRadio2" class="custom-control-label" style="white-space: nowrap;">本公司承包商</label>
             </div>
-          </div>
-          <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
-            <label for="inputPassword3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>職務稱謂</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b-d" id="inputPassword3" value="專員" >
+            <div class="col-sm-3 custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio" checked>
+              <label for="customRadio3" class="custom-control-label"style="white-space: nowrap;">本公司租賃廠商</label>
             </div>
-          </div>
-        </div>
-        <div class="card-body d-flex i-m-b">
-          <div class="row d-flex" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" ><span style="color: red;">*</span>姓名</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
-              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" required>
-              <p class="p-r-s">不可空白</p>
+            <div class="col-sm-3 custom-control custom-radio">
+              <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio" checked>
+              <label for="customRadio3" class="custom-control-label"style="white-space: nowrap;">其他廠商</label>
             </div>
-          </div>
-          <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
-            <label for="inputPassword3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>員工編號</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
-              <input type="text" class="form-control form-control-b-d" id="inputPassword3" value="林OO" >
-            </div>
-          </div>
-        </div>
-        <div class="card-body d-flex i-m-b">
-            <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
-              <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>證照名稱</label>
-              <div class="col-sm-9 d-flex flex-column align-items-end">
-                <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO"  required>
-                <p class="p-r-s">不可空白</p>
-              </div>
-            </div>
-          <div class="row d-flex" style=" width: 45%; margin-right: 10px;">
-              <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證字號</label>
-              <div class="col-sm-9 d-flex flex-column align-items-end">
-                <input type="text" class="form-control form-control-b" id="inputEmail3" value="新北捷訓授證字 第1090000244號"  required>
-                <p class="p-r-s">不可空白</p>
-              </div>
           </div>
         </div>
         <div class="card-body d-flex i-p-b">
-          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" >
+          <div class="row d-flex" style="width: 50%; margin-right: 20px">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">廠商公司名稱(全名)</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" placeholder="請輸入公司全名">
+            </div>
+          </div>
+          <div class="row d-flex" style=" width:50%;">
+            <label for="inputPassword3" class="col-sm-4 col-form-label">廠商公司電話</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputPassword3"  value="0987654321">
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-p-b">
+          <div class="row d-flex" style="width: 50%;margin-right: 20px">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">廠商承辦人姓名</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="超級專員">
+            </div>
+          </div>
+          <div class="row d-flex" style=" width: 50%;">
+            <label for="inputPassword3" class="col-sm-4 col-form-label">廠商承辦人電話</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputPassword3"  value="0987654321">
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-p-b">
+          <div class="row d-flex" style="width: 50%;margin-right: 20px">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">契約案號</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="AA123456">
+            </div>
+          </div>
+          <div class="row d-flex" style=" width: 50%">
+            <label for="inputPassword3" class="col-sm-4 col-form-label">契約名稱(全名)</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputPassword3"  value="打造超強工程">
+            </div>
+          </div>
+        </div>
+        <div class="card-body d-flex i-p-b">
+          <div class="row d-flex" style="width: 50%;margin-right: 20px">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">統一編號</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-control-b" id="inputEmail3" value="12345678">
             </div>
           </div>
         </div>
         <div class="card-body d-flex i-m-b">
-          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證日期</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
+          <div class="row d-flex flex-nowrap" style="width: 50%">
+            <label for="inputEmail3" class="col-sm-4 col-form-label">契約起迄期間</label>
+            <div class="col-sm-5 d-flex flex-column align-items-end">
               <div class="input-group date" id="reservationdate" data-target-input="nearest">
                 <input type="text" class="form-control form-control-b" data-target="#reservationdate" value="109/06/05" />
                 <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
@@ -428,10 +441,8 @@
               </div>
               <p class="p-r-s">請選擇日期</p>
             </div>
-          </div>
-          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>到期日期</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
+            <label class="col-form-label"> - </label>
+            <div class="col-sm-5 d-flex flex-column align-items-end">
               <div class="input-group date" id="reservationdate2" data-target-input="nearest">
                 <input type="text" class="form-control form-control-b" data-target="#reservationdate2" value="109/06/05" />
                 <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
@@ -443,126 +454,184 @@
           </div>
         </div>
         <div class="card-body i-p-b">
-          <div class=" row  d-flex flex-nowrap align-items-baseline" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">執行業務需求</label>
+          <div class=" row  d-flex flex-nowrap align-items-baseline" style="width: 65%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 11.66px;">廠商安全訓練新訓</label>
             <div class="col-sm-3 custom-control custom-radio">
               <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
-              <label for="customRadio2" class="custom-control-label">是</label>
+              <label for="customRadio2" class="custom-control-label" style="white-space: nowrap;">甲級550元 / 人</label>
             </div>
             <div class="col-sm-3 custom-control custom-radio">
               <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio" checked>
-              <label for="customRadio3" class="custom-control-label">否</label>
+              <label for="customRadio3" class="custom-control-label"style="white-space: nowrap;">乙級400元 / 人</label>
+            </div>
+            <div class="col-sm-3 custom-control custom-radio">
+              <input class="form-check-input" type="checkbox" id="customRadio3" name="customRadio">
+              <label for="customRadio3" class="form-check-label"style="white-space: nowrap;">是否為溫故訓練(250元 / 人)</label>
             </div>
           </div>
         </div>
-
-
-
-        <div class="card-body d-flex i-p-b">
-          <div class=" row d-flex align-content-center justify-content-center" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-9">
-                  <div id="filename1" class="form-control form-control-b"style="width: 100%;"></div>
-                </div>
-                <div class="col-3" style="padding: 0;">
-                  <button class="btn btn-outline-success choose-image-btn" data-preview="image-preview1" data-filename="filename1" style="width: 100%;padding:6px 3px 6px 3px ;">+ 選擇檔案</button>
-                </div>
-              </div>
-            </div>
-            <div id="image-preview1" class="image-preview-container">
-              <button class="btn btn-outline-dark remove-image-btn " data-preview="image-preview1" data-filename="filename1" onclick="removeImage(this)">移除</button>
-              <div class="image-preview-text">證照正面圖片<br>圖片僅用於證照審查</div>
-              <img class="image-preview">
-            </div>
-          </div>
-
-          <div class=" row d-flex align-content-center justify-content-center" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label">證照級別</label>
-            <div class="col-sm-9">
-              <div class="row">
-                <div class="col-9">
-                  <div id="filename2" class="form-control form-control-b"style="width: 100%;"></div>
-                </div>
-                <div class="col-3" style="padding: 0;">
-                  <button class="btn btn-outline-success choose-image-btn" data-preview="image-preview2" data-filename="filename2" style="width: 100%;padding:6px 3px 6px 3px ;">+ 選擇檔案</button>
-                </div>
-              </div>
-            </div>
-            <div id="image-preview2" class="image-preview-container">
-              <button class="btn btn-outline-dark remove-image-btn" data-preview="image-preview2" data-filename="filename2" onclick="removeImage(this)">移除</button>
-              <div class="image-preview-text">證照反面圖片<br>圖片僅用於證照審查</div>
-              <img class="image-preview" >
-            </div>
-          </div>
-        </div>
-        <!-- 放大檢視區域 -->
-        <div id="enlarged-view" class="image-preview-enlarged">
-          <img class="enlarged-image">
-          <button id="close-button" class="btn btn-outline-secondary close-button">關閉</button>
-        </div>
-
-
-
-
-        <hr>
         <div class="card-body i-p-b">
-          <div class=" row d-flex flex-nowrap align-items-baseline" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 10px;">回訓需求</label>
+          <div class=" row  d-flex flex-nowrap align-items-baseline" style="width: 65%; margin-right: 10px;">
+            <label for="inputEmail3" class="col-sm-3 col-form-label" style="margin-right: 11.66px;">廠商類型</label>
             <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio6" name="customRadio" checked>
-              <label for="customRadio6" class="custom-control-label">是</label>
-            </div>
-            <div class="col-sm-3 custom-control custom-radio">
-              <input class="custom-control-input" type="radio" id="customRadio7" name="customRadio" checked>
-              <label for="customRadio7" class="custom-control-label">否</label>
+              <input class="form-check-input" type="checkbox" id="customRadio2" name="customRadio">
+              <label for="customRadio2" class="form-check-label" style="white-space: nowrap;">250元 / 人</label>
             </div>
           </div>
         </div>
-        <!-- /.card-body --> 
-        <div class="card-body d-flex i-m-b">
-          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>發證日期</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
-              <div class="input-group date" id="reservationdate3" data-target-input="nearest">
-                <input type="text" class="form-control form-control-b" data-target="#reservationdate3" value="109/06/05" />
-                <div class="input-group-append" data-target="#reservationdate3" data-toggle="datetimepicker">
-                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
-                </div>
+        <div class="card-body" style="padding-bottom: 0;">
+          <div class=" row">
+            <label for="permissionDropdown" class="col-sm-3 col-form-label">人員資料</label>
+            <div class="col-sm-9 d-flex justify-content-end" style="padding-bottom: 15px;">
+              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#permissionModal">+新增人員</button>
+            </div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body p-0 table-height"style="max-height: 45vh;" >
+                <table class="table table-striped projects " >
+                  <thead style="background-color:#EEEEEE;">
+                    <tr>
+                      <th style="width: 20%">
+                        姓名
+                      </th>
+                      <th style="width: 20%">
+                        員工編號
+                      </th>
+                      <th style="width: 20%">
+                        身分證或護照
+                      </th>
+                      <th style="width: 20%">
+                        原工作證
+                      </th>
+                      <th style="width: 10%">
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
+                      <td>
+                        小花
+                      </td>
+                      <td>
+                        AA123456001
+                      </td>
+                      <td>
+                        A123456789
+                      </td>
+                      <td >
+                        <img src="" alt=" ">
+                      </td>
+                      <td class="project-actions text-right">
+                        <a class="btn  btn-sm" href="#">
+                          <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
+                        </a>
+                        <a class="btn btn-sm" href="#">
+                          <i class="far fa-trash-alt" style="color: #33363f;"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
+                      <td>
+                        小花
+                      </td>
+                      <td>
+                        AA123456001
+                      </td>
+                      <td>
+                        A123456789
+                      </td>
+                      <td >
+                        <img src="" alt=" ">
+                      </td>
+                      <td class="project-actions text-right">
+                        <a class="btn  btn-sm" href="#">
+                          <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
+                        </a>
+                        <a class="btn btn-sm" href="#">
+                          <i class="far fa-trash-alt" style="color: #33363f;"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
+                      <td>
+                        小花
+                      </td>
+                      <td>
+                        AA123456001
+                      </td>
+                      <td>
+                        A123456789
+                      </td>
+                      <td >
+                        <img src="" alt=" ">
+                      </td>
+                      <td class="project-actions text-right">
+                        <a class="btn  btn-sm" href="#">
+                          <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
+                        </a>
+                        <a class="btn btn-sm" href="#">
+                          <i class="far fa-trash-alt" style="color: #33363f;"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
+                      <td>
+                        小花
+                      </td>
+                      <td>
+                        AA123456001
+                      </td>
+                      <td>
+                        A123456789
+                      </td>
+                      <td >
+                        <img src="" alt=" ">
+                      </td>
+                      <td class="project-actions text-right">
+                        <a class="btn  btn-sm" href="#">
+                          <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
+                        </a>
+                        <a class="btn btn-sm" href="#">
+                          <i class="far fa-trash-alt" style="color: #33363f;"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                    <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
+                      <td>
+                        小花
+                      </td>
+                      <td>
+                        AA123456001
+                      </td>
+                      <td>
+                        A123456789
+                      </td>
+                      <td >
+                        <img src="" alt=" ">
+                      </td>
+                      <td class="project-actions text-right">
+                        <a class="btn  btn-sm" href="#">
+                          <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
+                        </a>
+                        <a class="btn btn-sm" href="#">
+                          <i class="far fa-trash-alt" style="color: #33363f;"></i>
+                        </a>
+                      </td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <p class="p-r-s">請選擇日期</p>
+              <!-- /.card-body -->
             </div>
           </div>
         </div>
-        <div class="card-body d-flex i-m-b">
-          <div class="row d-flex flex-nowrap" style="width: 45%; margin-right: 60px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label" style="white-space: nowrap;"><span style="color: red;">*</span>回訓通知日期</label>
-            <div class="col-sm-9 d-flex flex-column align-items-end">
-              <div class="input-group date" id="reservationdate4" data-target-input="nearest">
-                <input type="text" class="form-control form-control-b" data-target="#reservationdate4" value="109/06/05" />
-                <div class="input-group-append" data-target="#reservationdate4" data-toggle="datetimepicker">
-                    <div class="input-group-text form-control-b"><i class="fa fa-calendar"></i></div>
-                </div>
-              </div>
-              <p class="p-r-s">請選擇日期</p>
-            </div>
-          </div>
+        <div class="card-body d-flex justify-content-end align-items-end" style="padding-top: 0;">
+          <button type="button" class="btn btn-block btn-primary" style="max-width: 10%;">確定修改</button>
         </div>
-        <div class="card-body d-flex i-p-b">
-          <div class=" row d-flex" style="width: 45%; margin-right: 10px;">
-            <label for="inputEmail3" class="col-sm-3 col-form-label"><span style="color: red;">*</span>證照級別</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-b" id="inputEmail3" value="林OO" >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ./row -->
-      <div class="card-body d-flex justify-content-end align-items-end">
-        <button type="button" class="btn btn-block btn-default" style="max-width: 10%; margin-right: 5px;">取消</button>
-        <button type="button" class="btn btn-block btn-primary" style="max-width: 10%;">確定</button>
-      </div>
     </section>
     <!-- /.content -->
   </div>
@@ -718,81 +787,5 @@
   });
 </script>
 
-<!-- 圖片上傳設定 -->
-<script>
-  document.querySelectorAll('.choose-image-btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-      // 動態觸發檔案選擇
-      const fileInput = document.createElement('input');
-      fileInput.type = 'file';
-      fileInput.accept = 'image/*';
-      fileInput.style.display = 'none';
-
-      fileInput.addEventListener('change', function(event) {
-        const file = event.target.files[0];
-
-        if (file) {
-          // 獲取檔案名稱
-          const fileName = file.name;
-          // 將檔案名稱顯示在對應的元素中
-          const fileNameElementId = button.getAttribute('data-filename');
-          const fileNameElement = document.getElementById(fileNameElementId);
-          fileNameElement.innerText = fileName;
-          const reader = new FileReader();
-          reader.onload = function(e) {
-            // 使用 data-preview 屬性來查找相應的圖片預覽區域
-            const previewId = button.getAttribute('data-preview');
-            const preview = document.getElementById(previewId);
-
-            // 將圖片預覽顯示在方框中
-            const previewImage = preview.querySelector('.image-preview');
-            previewImage.src = e.target.result;
-            
-          };
-          reader.readAsDataURL(file);
-        }
-      // 顯示相應的移除按鈕
-      const previewId = button.getAttribute('data-preview');
-      const removeButton = document.querySelector(`.remove-image-btn[data-preview="${previewId}"]`);
-      removeButton.style.display = 'inline-block';
-      });
-
-      // 觸發檔案選擇
-      fileInput.click();
-      
-    });
-  });
-  // 新增事件監聽器，點擊圖片放大檢視
-  document.querySelectorAll('.image-preview').forEach(function(img) {
-    img.addEventListener('click', function() {
-      const enlargedView = document.getElementById('enlarged-view'); // 新增的元素，用於放大檢視
-      enlargedView.querySelector('.enlarged-image').src = img.src; // 將圖片的src賦值給放大檢視的元素
-
-      // 顯示放大檢視區域
-      enlargedView.style.display = 'block';
-
-      // 新增關閉按鈕的事件監聽器
-      const closeButton = document.getElementById('close-button');
-      closeButton.addEventListener('click', function() {
-        // 隱藏放大檢視區域
-        enlargedView.style.display = 'none';
-      });
-    });
-  });
-  //移除圖片
-  function removeImage(button) {
-    const previewId = button.getAttribute('data-preview');
-    const preview = document.getElementById(previewId);
-    // 移除圖片元素
-    const previewImage = preview.querySelector('.image-preview');
-    previewImage.src = '';  // 將圖片元素的 src 設置為空
-    // 移除檔案名稱顯示
-    const fileNameElementId = button.getAttribute('data-filename');
-    const fileNameElement = document.getElementById(fileNameElementId);
-    fileNameElement.innerText = '';
-    // 隱藏移除按鈕
-    button.style.display = 'none';
-  }
-</script>
 </body>
 </html>

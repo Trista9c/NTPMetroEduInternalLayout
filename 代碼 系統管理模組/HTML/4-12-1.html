@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>帳號密碼管理/公司同仁</title>
+  <title>承包商/委外人員帳號管理 - 未有任何資料</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -12,28 +12,6 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <link rel="stylesheet" href="../style/style.css">
-  <style>
-    .custom-tooltip {
-      position: relative;
-      cursor: pointer;
-    }
-    .custom-tooltip::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      top: 100%; /* 顯示在文字的下方 */
-      left: 50%; /* 使 tooltip 在元素中央 */
-      transform: translateX(-50%);
-      padding: 5px;
-      background-color: #5f5f5f;
-      color: #fff;
-      border-radius: 5px;
-      z-index: 1;
-      display: none; /* 預設隱藏 tooltip */
-    }
-    .custom-tooltip:hover::after {
-      display: inline-block; /* 滑鼠懸停時顯示 tooltip */
-    }
-  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -84,7 +62,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" >
     
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link" style="text-align: center;">
@@ -356,13 +334,14 @@
       <div class="container-fluid">
         <div class="d-flex">
           <div class="col-sm-6 d-flex align-content-center">
-            <h1 style="font-size: medium;">公司同仁</h1>
+            <h1 style="font-size: medium;">承包商/委外人員</h1>
           </div>
           <div class="col-sm-6 d-flex justify-content-end align-content-center">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">系統後台</a></li>
               <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">帳號密碼管理</a></li>
-              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">公司同仁</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">承包商</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color: #6c757d;">委外人員</a></li>
             </ol>
           </div>
         </div>
@@ -380,98 +359,19 @@
         </div>
       </div>
     </div>
-    <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px;" >
+    <div class="ml-auto" style="width: 30vw;text-align: right;margin:10px" >
+      <button class="btn btn-outline-success"><i class="far fa-arrow-alt-circle-down" style="color: #28a745;"></i> 匯入</button>
       <button class="btn btn-outline-success">+ 新增</button>
     </div>
     <!-- Main content -->
     <section class="content">
-    <!-- Default box -->
-      <div class="card">
-        <div class="card-body p-0 table-height" >
-          <table class="table table-striped projects " >
-            <thead style="background-color:#EEEEEE;">
-              <tr>
-                <th style="width: 15%">
-                  員工編號
-                </th>
-                <th style="width: 15%">
-                  姓名
-                </th>
-                <th style="width: 15%">
-                  帳務部門
-                </th>
-                <th style="width: 15%">
-                  部門名稱
-                </th>
-                <th style="width: 15%">
-                  職務名稱
-                </th>
-                <th style="width: 15%">
-                  角色
-                </th>
-                <th style="width: 10%">
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
-                <td>
-                  1011M0111
-                </td>
-                <td>
-                  林OO
-                </td>
-                <td>
-                  NTMC-D21
-                </td>
-                <td>
-                  人事課
-                </td>
-                <td>
-                  專員
-                </td>
-                <td>
-                  學員
-                </td>
-                <td class="project-actions text-right">
-                  <a class="btn  btn-sm" href="#">
-                    <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
-                  </a>
-                </td>
-                </td>
-              </tr>
-              <tr style="background-color: #ffffff;" onmouseover="this.style.backgroundColor='#f5f5f5';" onmouseout="this.style.backgroundColor='#ffffff';">
-                <td>
-                  1011M0111
-                </td>
-                <td>
-                  林OO
-                </td>
-                <td>
-                  NTMC-D21
-                </td>
-                <td>
-                  人事課
-                </td>
-                <td>
-                  專員
-                </td>
-                <td>
-                  學員
-                </td>
-                <td class="project-actions text-right">
-                  <a class="btn  btn-sm" href="#">
-                    <i class="fas fa-pencil-alt" style="color: #33363f;"></i>
-                  </a>
-                </td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- /.card-body -->
+      <div style="text-align: center; padding: 70px;" >
+        <a href="#" >
+          <i class="fas fa-plus-circle" style="color: #6c757d;font-size:2rem"></i>
+        </a>
+        <br>
+        <p class="p-content">尚未建立[承包商/委外人員帳號]，趕快前去建立！</p>
       </div>
-      <!-- /.card -->
     </section>
     <!-- /.content -->
   </div>
@@ -500,24 +400,5 @@
 <script src="../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var cells = document.querySelectorAll("td");
-
-    cells.forEach(function (cell) {
-      var originalText = cell.innerText;
-
-      // 如果文字超過 10 字元，進行截斷
-      if (originalText.length > 10) {
-        var truncatedText = originalText.substring(0, 10) + "...";
-        cell.innerText = truncatedText;
-        
-        // 在截斷的文字上加入 tooltip
-        cell.classList.add("custom-tooltip");
-        cell.setAttribute("data-tooltip", originalText);
-      }
-    });
-  });
-</script>
 </body>
 </html>

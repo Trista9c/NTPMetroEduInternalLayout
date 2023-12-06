@@ -1,3 +1,18 @@
+/* 背景色 */
+.sidebar-mini{
+  background-color:#F4F6F9;
+}
+/* 第二導覽列 */
+.content-header{
+  padding: 10px 0px 10px 5px;
+}
+/* SidebarSearch Form */
+.ml-auto-search{
+  width: 30vw;
+  text-align: right;
+  margin-right: 10px;
+}
+
 /* 左邊nav */
 .sidebar {
   max-height: 91vh;
@@ -16,6 +31,13 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+/* 尚未建立 */
+.p-content{
+  color: #6c757d;
+  margin: 10px;
 }
 
 /* 沒紅字時調整input */
@@ -37,8 +59,11 @@ h1{
 }
 
 /* Modal調整 */
-
-
+.modal-title{
+  text-align: left;
+  padding-left: 0; 
+  padding-bottom: 13px;
+}
 
 /* 表格設定 */
 .table-height {
